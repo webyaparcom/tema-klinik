@@ -1,0 +1,40 @@
+{
+  "id": "yhs6xyemcy",
+  "name": {
+    "tr": "Sık Sorulan Sorular",
+    "en": "FAQ",
+    "ar": "الأسئلة الشائعة"
+  },
+  "description": {
+    "tr": "Randevu, muayene ve merkezimizle ilgili sık sorulan sorular.",
+    "en": "Frequently asked questions about appointments, examinations and our centre.",
+    "ar": "أسئلة شائعة حول المواعيد والفحوص ومركزنا."
+  },
+  "keyword": {
+    "tr": "sss, soru, cevap",
+    "en": "faq, questions, answers",
+    "ar": "أسئلة شائعة"
+  },
+  "path": "sss",
+  "icon": "help",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "fhlc6v",
+      "oo4deh"
+    ],
+    "footer": []
+  },
+  "index": 3,
+  "url": "",
+  "text": {},
+  "title": {
+    "tr": "Sık Sorulan Sorular",
+    "en": "FAQ",
+    "ar": "الأسئلة الشائعة"
+  },
+  "date": "2026-10-30T18:34:02.921Z",
+  "update": "2026-10-30T18:37:07.987Z"
+}

@@ -1,0 +1,40 @@
+{
+  "name": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "status": "play",
+  "id": "vizyon",
+  "path": "vizyon",
+  "category": "",
+  "text": {
+    "tr": "<h2>Vizyonumuz</h2>\n<p>Bölgede ulaşılabilir, erişilebilir ve güven veren bir tıp merkezi olmak.</p>",
+    "en": "<h2>Our vision</h2>\n<p>To be an accessible, reachable and trusted medical centre in the region.</p>",
+    "ar": "<h2>رؤيتنا</h2>\n<p>أن نكون مركزًا طبيًا سهل الوصول ومهيّأً للجميع وموضع ثقة في المنطقة.</p>"
+  },
+  "desing": {
+    "header": [],
+    "body": [
+      "t3pd01",
+      "t3ca01"
+    ],
+    "footer": []
+  },
+  "desc": {},
+  "index": 2,
+  "icon": "home",
+  "title": {
+    "tr": "Vizyon",
+    "en": "Vision",
+    "ar": "الرؤية"
+  },
+  "description": {
+    "tr": "Vizyonumuz",
+    "en": "Our vision",
+    "ar": "رؤيتنا"
+  },
+  "keyword": {},
+  "update": "2026-10-30T18:37:08.036Z",
+  "date": "2026-05-19"
+}

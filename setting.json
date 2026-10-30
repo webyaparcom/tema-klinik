@@ -1,0 +1,54 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Berrak Tıp Merkezi: dokuz branşta uzman hekimler, çevrimiçi randevu ve erişilebilir bir ortam. (Demo site)",
+    "en": "Berrak Medical Centre: specialist physicians in nine departments, online appointments and an accessible environment. (Demo site)",
+    "ar": "مركز بيراك الطبي: أطباء متخصصون في تسعة أقسام، وحجز المواعيد عبر الإنترنت، وبيئة مهيأة للجميع. (موقع تجريبي)"
+  },
+  "keyword": {
+    "tr": "tıp merkezi, poliklinik, randevu, hekim, branş",
+    "en": "medical centre, polyclinic, appointment, physician, department",
+    "ar": "مركز طبي، عيادة، موعد، طبيب، قسم"
+  },
+  "category": "Kurumsal",
+  "name": "Berrak Tıp Merkezi",
+  "domain": "klinik.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "icon": "icon.png",
+  "theme_color": "#0F766E",
+  "publishMode": "static",
+  "font": {
+    "body": "inter",
+    "heading": "fraunces",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-naskh-arabic"
+    }
+  },
+  "colorScheme": "auto",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "8px",
+    "--mx-radius-md": "12px",
+    "--mx-radius-lg": "16px",
+    "--mx-radius-xl": "22px"
+  }
+}
