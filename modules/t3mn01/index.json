@@ -7,7 +7,7 @@
     "activecolor": "#000000",
     "ariaToggle": {
       "tr": "Menüyü aç/kapat",
-      "en": "Toggle menu"
+      "en": "Toggle menu", "ar": "تبديل القائمة"
     }
   },
   "category": "menu",

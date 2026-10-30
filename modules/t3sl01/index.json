@@ -71,11 +71,11 @@
     "bgcolor": "#111111",
     "prevLabel": {
       "tr": "Önceki slayt",
-      "en": "Previous slide"
+      "en": "Previous slide", "ar": "الشريحة السابقة"
     },
     "nextLabel": {
       "tr": "Sonraki slayt",
-      "en": "Next slide"
+      "en": "Next slide", "ar": "الشريحة التالية"
     }
   },
   "category": "slider",

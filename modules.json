@@ -647,7 +647,9 @@
           "tr": "İhtiyacınıza uygun branşı seçin; ayrıntılar Branşlar ve tedaviler sayfasındadır.",
           "en": "Choose the department that fits your needs; details are on the Departments page.",
           "ar": "اختر القسم المناسب لاحتياجك، وتجد التفاصيل في صفحة الأقسام."
-        }
+        },
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff"
       },
       "data": [
         {
@@ -735,7 +737,9 @@
           "tr": "Her branşta muayene, gerekli tetkikler ve takip planı hekim tarafından belirlenir.",
           "en": "In every department the examination, required tests and follow-up plan are determined by the physician.",
           "ar": "في كل قسم يحدّد الطبيب الفحص والتحاليل اللازمة وخطة المتابعة."
-        }
+        },
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff"
       },
       "data": [
         {
@@ -2120,7 +2124,9 @@
           "tr": "Fiziksel erişim imkânlarımız ve randevu öncesi destek seçeneklerimiz.",
           "en": "Our physical access features and support options before your visit.",
           "ar": "تجهيزاتنا لتسهيل الوصول وخيارات الدعم قبل الزيارة."
-        }
+        },
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff"
       },
       "data": [
         {
@@ -2638,6 +2644,74 @@
       "local": "body",
       "data": [],
       "index": 27
+    },
+    {
+      "name": "Page Desing 5",
+      "desing": {
+        "height": "200",
+        "opacity": "0.5",
+        "font-size": "32",
+        "backgroundcolor": "#000",
+        "menu-active": "var(--mx-site-primary, #2563eb)",
+        "textcolor": "#fff",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "border_radius": "8px",
+        "card_shadow": "0 10px 28px rgba(0, 0, 0, 0.08)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "colortitle": "var(--mx-site-text, #1b1b1b)",
+        "coloractive": "var(--mx-site-primary, #2563eb)",
+        "ui": {
+          "tr": {
+            "home": "Anasayfa",
+            "products": "Sayfalar",
+            "dimensions": "Ölçüler",
+            "dimNote": "Standart üretim referansıdır; proje bazında özelleştirilebilir.",
+            "quote": "İletişim",
+            "whatsapp": "WhatsApp",
+            "prev": "Önceki",
+            "next": "Sonraki"
+          },
+          "en": {
+            "home": "Home",
+            "products": "Pages",
+            "dimensions": "Dimensions",
+            "dimNote": "Standard production reference; customizable per project.",
+            "quote": "Contact",
+            "whatsapp": "WhatsApp",
+            "prev": "Previous",
+            "next": "Next"
+          },
+          "ar": {
+            "home": "الرئيسية",
+            "products": "الصفحات",
+            "dimensions": "الأبعاد",
+            "dimNote": "مرجع إنتاج قياسي؛ قابل للتخصيص حسب المشروع.",
+            "quote": "اتصل بنا",
+            "whatsapp": "واتساب",
+            "prev": "السابق",
+            "next": "التالي"
+          }
+        },
+        "noTitle": {
+          "tr": "Başlık Yok",
+          "en": "No title",
+          "ar": "بدون عنوان"
+        },
+        "productNavAria": {
+          "tr": "Ürün navigasyonu",
+          "en": "Product navigation",
+          "ar": "تنقل المنتج"
+        }
+      },
+      "category": "page",
+      "description": "Sayfa basligi, yan menu ve icerik alani. Urun detayinda breadcrumb, olcu kartlari, teklif/WhatsApp CTA, onceki/sonraki urun navigasyonu. Kategori menusu ve responsive slide-in menu.",
+      "version": "1.3.1",
+      "icon": "web",
+      "id": "5tw6h6",
+      "path": "page-desing-5",
+      "local": "body",
+      "data": [],
+      "index": 28
     }
   ]
 }
