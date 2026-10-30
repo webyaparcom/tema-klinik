@@ -1,0 +1,45 @@
+{
+  "name": {
+    "tr": "Hekimlerimiz",
+    "en": "Our Physicians",
+    "ar": "أطباؤنا"
+  },
+  "status": "play",
+  "category": "",
+  "id": "yvi9dlb59o",
+  "url": "",
+  "path": "hekimlerimiz",
+  "index": 0,
+  "desing": {
+    "header": [],
+    "body": [
+      "9ovvk0",
+      "oo4deh"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Uzman hekim kadromuz, unvanları ve uzmanlık alanlarıyla.",
+    "en": "Our specialist physicians with their titles and fields of practice.",
+    "ar": "أطباؤنا المتخصصون مع ألقابهم ومجالات تخصصهم."
+  },
+  "spot": {
+    "tr": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Hekimlerimiz",
+    "en": "Our Physicians",
+    "ar": "أطباؤنا"
+  },
+  "keyword": {
+    "tr": "hekim, uzman doktor, branş",
+    "en": "physician, specialist doctor, department",
+    "ar": "طبيب، أخصائي، قسم"
+  },
+  "text": {},
+  "update": "2026-10-30T18:37:07.959Z",
+  "date": "2026-05-19",
+  "icon": "stethoscope"
+}

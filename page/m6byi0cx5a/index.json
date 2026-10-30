@@ -1,0 +1,43 @@
+{
+  "id": "m6byi0cx5a",
+  "name": {
+    "tr": "Hasta Hakları",
+    "en": "Patient Rights",
+    "ar": "حقوق المرضى"
+  },
+  "description": {
+    "tr": "Hasta hakları ilkelerinin özeti.",
+    "en": "A summary of patient rights principles.",
+    "ar": "ملخص لمبادئ حقوق المرضى."
+  },
+  "keyword": {
+    "tr": "hasta hakları, onam, mahremiyet",
+    "en": "patient rights, consent, privacy",
+    "ar": "حقوق المرضى، موافقة، خصوصية"
+  },
+  "path": "hasta-haklari",
+  "icon": "gavel",
+  "category": "",
+  "status": "play",
+  "desing": {
+    "header": [],
+    "body": [
+      "nr66u4"
+    ],
+    "footer": []
+  },
+  "index": 5,
+  "url": "",
+  "text": {
+    "tr": "<h2>Hasta hakları</h2><p>Merkezimiz, Hasta Hakları Yönetmeliği’ndeki ilkeleri esas alır. Aşağıdaki başlıklar demo amaçlı özetlenmiştir.</p><h3>Bilgilendirilme</h3><p>Sağlık durumunuz, önerilen işlemler ve seçenekler hakkında anlaşılır biçimde bilgi alma hakkınız vardır.</p><h3>Onam</h3><p>Girişimsel işlemler öncesinde bilgilendirilmiş onamınız alınır; onamınızı her aşamada geri çekebilirsiniz.</p><h3>Gizlilik</h3><p>Sağlık bilgileriniz gizlidir; yalnızca mevzuatın izin verdiği hâllerde ve ilgili sağlık çalışanlarıyla paylaşılır.</p><h3>Saygı ve itibar</h3><p>Din, dil, ırk, cinsiyet veya sosyal durum ayrımı gözetilmeksizin saygılı bir hizmet alırsınız.</p><h3>Hekim ve hizmet seçimi</h3><p>Randevu takvimi elverdiğince hekiminizi seçebilir, görüşünüzü başka bir hekimden de alabilirsiniz.</p><h3>Şikâyet ve öneri</h3><p>Görüş ve şikâyetlerinizi iletişim sayfamızdaki e-posta veya telefon üzerinden iletebilirsiniz; başvurunuz yazılı olarak yanıtlanır.</p><p><em>Bu metin demo amaçlı örnektir; hukuki danışmanlık yerine geçmez.</em></p>",
+    "en": "<h2>Patient rights</h2><p>Our centre follows the principles of the Patient Rights Regulation. The headings below are summarised for demonstration purposes.</p><h3>Being informed</h3><p>You have the right to clear information about your health condition, the proposed procedures and the alternatives.</p><h3>Consent</h3><p>Your informed consent is obtained before any invasive procedure, and you may withdraw it at any stage.</p><h3>Confidentiality</h3><p>Your health information is confidential and is shared only where the law permits and with the health professionals involved.</p><h3>Respect and dignity</h3><p>You receive respectful service regardless of religion, language, race, gender or social status.</p><h3>Choice of physician and service</h3><p>As far as the schedule allows you may choose your physician, and you may also seek a second opinion.</p><h3>Complaints and suggestions</h3><p>You can send feedback and complaints by e-mail or phone through our contact page; your request is answered in writing.</p><p><em>This text is a sample for demonstration purposes and is not legal advice.</em></p>",
+    "ar": "<h2>حقوق المرضى</h2><p>يلتزم مركزنا بالمبادئ الواردة في لائحة حقوق المرضى. وقد لُخِّصت العناوين أدناه لأغراض العرض التجريبي.</p><h3>الحق في المعلومات</h3><p>من حقك الحصول على معلومات واضحة عن حالتك الصحية والإجراءات المقترحة والبدائل المتاحة.</p><h3>الموافقة</h3><p>نحصل على موافقتك المستنيرة قبل أي إجراء تدخلي، ويحق لك سحبها في أي مرحلة.</p><h3>السرّية</h3><p>معلوماتك الصحية سرّية، ولا تُشارَك إلا في الحالات التي يسمح بها القانون ومع العاملين الصحيين المعنيين.</p><h3>الاحترام والكرامة</h3><p>تتلقى خدمة محترمة دون تمييز بسبب الدين أو اللغة أو العِرق أو الجنس أو الوضع الاجتماعي.</p><h3>اختيار الطبيب والخدمة</h3><p>يمكنك اختيار طبيبك بقدر ما يسمح جدول المواعيد، كما يحق لك طلب رأي طبيب آخر.</p><h3>الشكاوى والاقتراحات</h3><p>يمكنك إرسال ملاحظاتك وشكاواك عبر البريد الإلكتروني أو الهاتف من خلال صفحة التواصل، ويُردّ على طلبك كتابةً.</p><p><em>هذا النص مثال لأغراض العرض التجريبي ولا يغني عن الاستشارة القانونية.</em></p>"
+  },
+  "title": {
+    "tr": "Hasta Hakları",
+    "en": "Patient Rights",
+    "ar": "حقوق المرضى"
+  },
+  "date": "2026-10-30T18:34:02.957Z",
+  "update": "2026-10-30T18:37:07.995Z"
+}

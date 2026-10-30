@@ -1,0 +1,40 @@
+{
+  "name": {
+    "tr": "Misyon",
+    "en": "Mission",
+    "ar": "المهمة"
+  },
+  "status": "play",
+  "id": "misyon",
+  "path": "misyon",
+  "category": "",
+  "text": {
+    "tr": "<h2>Misyonumuz</h2>\n<p>Misyonumuz, hastalarımıza sakin bir ortamda, planlı randevuyla, açık bilgilendirmeye dayalı bir muayene deneyimi sunmaktır.</p>",
+    "en": "<h2>Our mission</h2>\n<p>Our mission is to offer patients an examination experience in a calm setting, by appointment and based on clear information.</p>",
+    "ar": "<h2>مهمتنا</h2>\n<p>مهمتنا أن نقدّم لمرضانا تجربة فحص في بيئة هادئة، بموعد مسبق، وتقوم على المعلومات الواضحة.</p>"
+  },
+  "desing": {
+    "header": [],
+    "body": [
+      "t3pd01",
+      "t3ca01"
+    ],
+    "footer": []
+  },
+  "desc": {},
+  "index": 1,
+  "icon": "home",
+  "title": {
+    "tr": "Misyon",
+    "en": "Mission",
+    "ar": "المهمة"
+  },
+  "description": {
+    "tr": "Misyonumuz",
+    "en": "Our mission",
+    "ar": "مهمتنا"
+  },
+  "keyword": {},
+  "update": "2026-10-30T18:37:08.033Z",
+  "date": "2026-05-19"
+}

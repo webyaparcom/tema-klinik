@@ -1,0 +1,40 @@
+{
+  "name": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "status": "play",
+  "id": "kalitepolitikamiz",
+  "path": "kalitepolitikamiz",
+  "category": "",
+  "text": {
+    "tr": "<h2>Kalite Politikamız</h2>\n<p>Hijyen ve sterilizasyon standartlarına uyum, hasta mahremiyeti, doğru ve zamanında bilgilendirme ile düzenli iç denetim kalite anlayışımızın temelidir.</p>",
+    "en": "<h2>Our quality policy</h2>\n<p>Compliance with hygiene and sterilisation standards, patient privacy, accurate and timely information, and regular internal audits are the basis of our quality approach.</p>",
+    "ar": "<h2>سياسة الجودة لدينا</h2>\n<p>الالتزام بمعايير النظافة والتعقيم، وخصوصية المريض، والمعلومات الدقيقة في وقتها، والتدقيق الداخلي المنتظم هي أساس نهجنا في الجودة.</p>"
+  },
+  "desing": {
+    "header": [],
+    "body": [
+      "t3pd01",
+      "t3ca01"
+    ],
+    "footer": []
+  },
+  "desc": {},
+  "index": 3,
+  "icon": "home",
+  "title": {
+    "tr": "Kalite Politikamız",
+    "en": "Quality Policy",
+    "ar": "سياسة الجودة"
+  },
+  "description": {
+    "tr": "Kalite politikamız",
+    "en": "Our quality policy",
+    "ar": "سياسة الجودة لدينا"
+  },
+  "keyword": {},
+  "update": "2026-10-30T18:37:08.039Z",
+  "date": "2026-05-19"
+}

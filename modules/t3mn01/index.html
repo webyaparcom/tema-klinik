@@ -1,0 +1,423 @@
+<div class="modulex">
+  <div class="modulextitle">
+    <div class="modulextitlebody">
+      <div class="modulextitlebodylang">
+        <ul>
+          {{langhtml}}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modulexbody">
+    <a href="/{{lang}}/"
+      ><img
+        src="/img/{{logo}}?v={{random}}"
+        alt="{{web-name}} Logo"
+        class="modulexbodylogo"
+        loading="lazy"
+    /></a>
+    <button type="button" class="modulex-mobile-toggle" onclick="menu2_toggle()" aria-label="{{ariaToggle}}">
+      <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+    </button>
+  </div>
+  <div class="modulexmenubody">
+    <div class="modulexmenu" id="menu-2-root">
+      <div class="modulexmenulistbody">
+        <div class="modulexmenulist">
+          <ul>
+            {{html}}
+          </ul>
+          <div class="modulexlanguages-mobile">
+            <ul>
+              {{langhtml}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+ 
+
+  .modulex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modulextitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .modulextitle:has(.modulextitlebodylang:empty),
+  .modulextitle:has(.modulextitlebodylang ul:empty) {
+    display: none;
+  }
+
+  .modulextitlebody {
+    color: --color--;
+    width: var(--max);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .modulextitlebodytitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .modulextitlebodylang {
+    width: auto;
+    margin: -5px 0px -5px 0px;
+  }
+
+  .modulextitlebodylang:empty,
+  .modulextitlebodylang ul:empty {
+    display: none;
+  }
+
+  .modulextitlebodylang ul {
+    display: flex;
+    gap: 5px;
+  }
+
+  .modulexbody {
+    width: var(--max);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px 0px 5px 0px;
+    position: relative;
+  }
+
+  .modulexbody > a {
+    display: inline-flex;
+    align-items: center;
+    max-width: min(90vw, 320px);
+    min-width: 0;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+
+  .modulexbodylogo {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: left center;
+  }
+
+  /* SVG logo korumasi (2026-09-12): intrinsic boyutu OLMAYAN bir SVG
+     (yalniz viewBox) `height:auto` ile flex icinde 0'a coker ve logo
+     GORUNMEZ. `max-height` yetmez -- ust sinirdir, olcu vermez.
+     Yukseklik bu modulun KENDI tasarim tavanindan alindi. */
+  .modulexbodylogo[src*=".svg"] {
+    height: 60px;
+    width: 300px;
+    object-fit: contain;
+  }
+
+  .modulex-mobile-toggle {
+    display: none;
+    background: --bgcolor--;
+    color: --color--;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+
+  .modulex-mobile-toggle span {
+    font-size: 24px;
+  }
+
+  .modulexmenu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: var(--max);
+  }
+
+  .modulexmenulist {
+    width: calc(100% - 20px);
+    background-color: --bgcolor--;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+
+  .modulexmenubody {
+    width: 100%;
+    background-color: --bgcolor--;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modulexmenulist ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modulexmenulist ul a {
+    padding: 10px;
+    font-size: 16px;
+    color: --color-- !important;
+    border-bottom: 1px solid transparent;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .modulexmenulist ul a:hover {
+    background-color: --activebgcolor--;
+    border-radius: 5px;
+    color: --activecolor-- !important;
+    cursor: pointer;
+  }
+
+  .modulexmenulist ul a.modulex-menu-list-active {
+    color: --activecolor-- !important;
+  }
+
+  .modulex-menu-list-active {
+    background-color: --activebgcolor--;
+    border-radius: 5px;
+    color: --activecolor-- !important;
+    border-bottom: 1px solid --activecolor-- !important;
+    cursor: pointer;
+  }
+
+  .modulexmenulistbody {
+    width: 100%;
+  }
+
+  .modulexlanguages-mobile {
+    display: none;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .modulexlanguages-mobile:empty,
+  .modulexlanguages-mobile ul:empty {
+    display: none !important;
+  }
+
+  .modulexlanguages-mobile ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .modulexlanguages-mobile li {
+    list-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    aspect-ratio: 1/1;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
+
+  .modulexlanguages-mobile li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modulexlanguages-mobile li:hover {
+    background-color: --activebgcolor--;
+    border-color: --activecolor--;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .modulexbodylogo {
+      max-height: 80px;
+      max-width: 100%;
+    }
+
+    .modulextitle {
+    margin-bottom: -30px;
+  }
+
+
+  }
+
+  @media screen and (max-width: 1024px) {
+    .modulexbody {
+      width: calc(100% - 20px);
+      padding: 0 10px;
+      justify-content: flex-start;
+    }
+
+    .modulexmenulist ul {
+      flex-direction: row;
+    }
+
+    .modulexbodylogo {
+      max-width: min(50vw, 220px);
+      max-height: 80px;
+    }
+
+    .modulextitlebody {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      display: none;
+    }
+
+    .modulextitlebodytitle {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modulextitlebodylang {
+      display: none;
+    }
+
+    .modulexbody {
+      width: calc(100% - 20px);
+      padding: 0 10px;
+      justify-content: space-between;
+    }
+
+    .modulex-mobile-toggle {
+      display: inline-flex;
+    }
+
+    .modulexbodylogo {
+      max-width: min(40vw, 180px);
+      max-height: 70px;
+    }
+
+    .modulexbody > a {
+      max-width: min(40vw, 180px);
+    }
+
+    .modulexmenulist {
+      display: none;
+      flex-direction: column;
+      width: calc(100% - 24px);
+      padding: 12px;
+    }
+
+    .modulexmenu.modulexmenu-open .modulexmenulist {
+      display: flex;
+    }
+
+    .modulexmenu.modulexmenu-open .modulexlanguages-mobile {
+      display: block;
+    }
+
+    .modulexlanguages-mobile ul {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modulexlanguages-mobile li {
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+
+    .modulexmenulist ul {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .modulexmenulist ul a {
+      font-size: 14px;
+      width: 100%;
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0;
+    }
+
+    .modulexmenulist ul a:last-child {
+      border-bottom: none;
+    }
+
+    .modulexmenulist ul a:hover {
+      background-color: --activebgcolor--;
+      border-radius: 0;
+    }
+
+    .modulextitlebodytitle {
+      font-size: 12px;
+    }
+  }
+
+  /* W2: mobil tasma kontrolu */
+  @media (max-width: 768px) {
+    [class*="modulex"] {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  /* W2: erisilebilirlik — animasyon kapatma */
+  @media (prefers-reduced-motion: reduce) {
+    [class*="modulex"],
+    [class*="modulex"] * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+<script>
+  if (typeof menu2_toggle === "undefined") {
+    function menu2_toggle() {
+      var root = document.getElementById("menu-2-root");
+      if (!root) {
+        return;
+      }
+      if (root.classList.contains("modulexmenu-open")) {
+        root.classList.remove("modulexmenu-open");
+      } else {
+        root.classList.add("modulexmenu-open");
+      }
+    }
+  }
+</script>

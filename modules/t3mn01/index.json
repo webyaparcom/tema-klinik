@@ -1,0 +1,17 @@
+{
+  "name": "Menu 2",
+  "desing": {
+    "bgcolor": "#1e3046",
+    "color": "#ffffff",
+    "activebgcolor": "#ffffff",
+    "activecolor": "#000000",
+    "ariaToggle": {
+      "tr": "Menüyü aç/kapat",
+      "en": "Toggle menu"
+    }
+  },
+  "category": "menu",
+  "description": "Sticky header navigasyon menüsü. Logo, sayfa linkleri ve mobil hamburger menü içerir. 16 farklı projede kullanılır: üretim, e-ticaret, kurumsal, eğitim, ajans ve hizmet sektörü firmalarında. Scroll animasyonu, aktif sayfa vurgulama ve responsive menü geçişi özellikleri vardır.",
+  "version": "1.0.0",
+  "icon": "menu"
+}
