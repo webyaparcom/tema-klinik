@@ -14,5 +14,10 @@
   "category": "text",
   "description": "Tek satır veya kısa metin bloğu gösteren modül. Panel veya menü sayfalarında başlık / bilgi metni için kullanılır.",
   "version": "1.0.0",
-  "icon": "text_fields"
+  "icon": "text_fields",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }

@@ -12,5 +12,10 @@
     "chilesize": "16px"
   },
   "category": "page-list",
-  "description": "İçerikleri sütun düzeninde gösteren responsive modül. Kategori ve hizmet sunumlarında etkili görünüm sağlar."
+  "description": "İçerikleri sütun düzeninde gösteren responsive modül. Kategori ve hizmet sunumlarında etkili görünüm sağlar.",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }

@@ -46,5 +46,5 @@ try {
   }
   html = html.replace(new RegExp("{{langhtml}}", "g"), langhtml);
 } catch (error) {
-  console.log("cccccccccccccccccccccccccccccc");
+  console.log("menu-2-b back.js", error);
 }

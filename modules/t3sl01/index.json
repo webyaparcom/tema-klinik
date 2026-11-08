@@ -65,21 +65,28 @@
     "titlecolor": "#ffffff",
     "desccolor": "rgba(255, 255, 255, 0.88)",
     "btncolor": "#ffffff",
-    "btnbg": "#007bff",
+    "btnbg": "#0a58ca",
     "border_radius": "8px",
     "margin": "0",
     "bgcolor": "#111111",
     "prevLabel": {
       "tr": "Önceki slayt",
-      "en": "Previous slide", "ar": "الشريحة السابقة"
+      "en": "Previous slide",
+      "ar": "الشريحة السابقة"
     },
     "nextLabel": {
       "tr": "Sonraki slayt",
-      "en": "Next slide", "ar": "الشريحة التالية"
+      "en": "Next slide",
+      "ar": "الشريحة التالية"
     }
   },
   "category": "slider",
   "description": "Hero slider: bg arka plan, img on plan. layout: left (gorsel sol) veya right (gorsel sag); yoksa sirali alternatif. img yoksa metin ortada.",
   "version": "2.3.2",
-  "icon": "view_carousel"
+  "icon": "view_carousel",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }

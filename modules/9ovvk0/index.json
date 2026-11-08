@@ -19,12 +19,16 @@
     "description": {
       "tr": "Alanında deneyimli ekibimiz projelerinize değer katmak için burada.",
       "en": "Our experienced team is here to add value to your projects."
-    }
+    },
+    "accentText": "#ffffff"
   },
   "data": [
     {
       "name": "Ad Soyad",
-      "role": { "tr": "Kurucu / CEO", "en": "Founder / CEO" },
+      "role": {
+        "tr": "Kurucu / CEO",
+        "en": "Founder / CEO"
+      },
       "bio": {
         "tr": "10+ yıllık sektör deneyimi ile strateji ve yönetim.",
         "en": "Strategy and management with 10+ years of industry experience."
@@ -33,7 +37,10 @@
     },
     {
       "name": "Ad Soyad",
-      "role": { "tr": "Tasarım Direktörü", "en": "Design Director" },
+      "role": {
+        "tr": "Tasarım Direktörü",
+        "en": "Design Director"
+      },
       "bio": {
         "tr": "Marka kimliği ve kullanıcı deneyimi tasarımı.",
         "en": "Brand identity and user experience design."
@@ -42,7 +49,10 @@
     },
     {
       "name": "Ad Soyad",
-      "role": { "tr": "Yazılım Geliştirici", "en": "Software Developer" },
+      "role": {
+        "tr": "Yazılım Geliştirici",
+        "en": "Software Developer"
+      },
       "bio": {
         "tr": "Modern web teknolojileri ile ölçeklenebilir çözümler.",
         "en": "Scalable solutions with modern web technologies."
@@ -53,5 +63,10 @@
   "category": "team",
   "description": "Ekip üyeleri modülü. Fotoğraf, isim, unvan ve kısa biyografiyi responsive kart grid'inde gösterir. Fotoğraf yoksa ikon fallback, çok dilli unvan/biyografi ve animasyonlu giriş içerir.",
   "version": "1.0.0",
-  "icon": "groups"
+  "icon": "groups",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
 }
