@@ -113,7 +113,8 @@
           "ar": "تواصل معنا"
         },
         "margin": "30px 0px 30px 0px",
-        "linkcolor": "var(--mx-site-primary, #2563eb)"
+        "linkcolor": "var(--mx-site-primary, #2563eb)",
+        "stil": ""
       },
       "data": [
         {
@@ -159,7 +160,26 @@
         "backgroundcolor": "#ffffff",
         "color": "var(--mx-site-text, #1b1b1b)",
         "img": "map.png",
-        "externalUrl": ""
+        "externalUrl": "",
+        "stil": "",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "badgeText": {
+          "tr": "Konumumuz",
+          "en": "Our Location",
+          "ar": "موقعنا"
+        },
+        "infoTitle": {
+          "tr": "Bize Ulaşın",
+          "en": "Contact Us",
+          "ar": "اتصل بنا"
+        },
+        "directions": {
+          "tr": "Yol tarifi al",
+          "en": "Get directions",
+          "ar": "احصل على الاتجاهات"
+        }
       },
       "version": "1.0.0",
       "icon": "map",
@@ -226,7 +246,9 @@
           "tr": "Ürün navigasyonu",
           "en": "Product navigation",
           "ar": "تنقل المنتج"
-        }
+        },
+        "stil": "",
+        "activetext": "#fff"
       },
       "version": "1.0.0",
       "icon": "web"
@@ -242,7 +264,11 @@
         "color": "#fff",
         "img": "",
         "imgwidth": "250px",
-        "showlang": true
+        "showlang": true,
+        "stil": "",
+        "showsocial": true,
+        "social": [],
+        "langcolor": ""
       },
       "data": [],
       "version": "1.0.0",
@@ -320,7 +346,8 @@
           "tr": "Berrak Tıp Merkezi",
           "en": "Berrak Medical Centre",
           "ar": "مركز بيراك الطبي"
-        }
+        },
+        "stil": ""
       },
       "index": 7
     },
@@ -338,7 +365,8 @@
         "numbercolor": "#ffffff",
         "labelcolor": "rgba(255,255,255,.88)",
         "iconsize": "56px",
-        "iconbox": "88px"
+        "iconbox": "88px",
+        "stil": ""
       },
       "data": [
         {
@@ -418,7 +446,8 @@
           "en": "Our physicians",
           "ar": "أطباؤنا"
         },
-        "btn2Url": "hekimlerimiz"
+        "btn2Url": "hekimlerimiz",
+        "stil": ""
       },
       "index": 9
     },
@@ -480,6 +509,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "id": "ixcdnq",
@@ -494,7 +529,10 @@
         "logo": "logo.png",
         "color": "var(--mx-site-text, #1b1b1b)",
         "height": "84px",
-        "background-color": "var(--mx-site-bg, #ffffff)"
+        "background-color": "var(--mx-site-bg, #ffffff)",
+        "menubg": "",
+        "menutext": "#fff",
+        "menuhoverbg": "rgba(255,255,255,.18)"
       },
       "category": "menu",
       "description": "Light gri background navigasyon menüsü. Logo, sayfa linkleri ve 100px yükseklikte modern header tasarımı sunar. 6 farklı projede kullanılır: mobil ajans, üretim, sağlık, medya, inşaat ve profesyonel hizmet firmalarında. Sticky header, hover efektleri ve responsive mobil menü geçişi içerir.",
@@ -514,7 +552,15 @@
         "color": "var(--mx-site-text, #1b1b1b)",
         "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
         "minimal_design": true,
-        "social_media": false
+        "social_media": false,
+        "logo_maxh": "60px",
+        "logo_plate": false,
+        "contact_line": "auto",
+        "logoDark": "",
+        "duzen": "",
+        "slogan": "",
+        "ikinciSutun": "",
+        "iletisimNot": ""
       },
       "category": "footer",
       "data": [],
@@ -612,7 +658,8 @@
           "ar": "أقسامنا"
         },
         "btn2_url": "tedaviler",
-        "stats": ""
+        "stats": "",
+        "stil": ""
       },
       "category": "hero",
       "description": "Gradient hero: istatistikler, CTA, görsel alanı. Metinler cok dilli (tr/en); renkler --gradient--, --btn_primary_bg-- ile markaya uyumlanır. Buton URL pathnext (urunler, iletisim).",
@@ -894,7 +941,8 @@
           "ar": "زيارة منظَّمة في أربع خطوات."
         },
         "cardbg": "var(--mx-site-surface, #ffffff)",
-        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "#ffffff"
       },
       "data": [
         {
@@ -984,7 +1032,8 @@
           "en": "Physician details are fictional samples; titles and specialties use real medical terminology.",
           "ar": "معلومات الأطباء افتراضية لأغراض العرض؛ والألقاب والتخصصات مذكورة بمصطلحات طبية حقيقية."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "#ffffff"
       },
       "data": [
         {
@@ -1166,7 +1215,8 @@
           "en": "Common questions about appointments, examinations and our centre.",
           "ar": "أسئلة متكررة حول المواعيد والفحوص ومركزنا."
         },
-        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)"
       },
       "data": [
         {
@@ -2262,7 +2312,8 @@
           "tr": "Erişilebilir web sitesi",
           "en": "An accessible website",
           "ar": "موقع إلكتروني متاح للجميع"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -2318,7 +2369,8 @@
           "tr": "Hakkımızda",
           "en": "About us",
           "ar": "من نحن"
-        }
+        },
+        "stil": ""
       },
       "category": "module",
       "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir.",
@@ -2609,7 +2661,8 @@
           "en": "FAQ",
           "ar": "الأسئلة الشائعة"
         },
-        "btn2Url": "sss"
+        "btn2Url": "sss",
+        "stil": ""
       },
       "category": "cta",
       "description": "Harekete geçirici çağrı (CTA) şerit modülü. Gradient arka plan üzerinde başlık, açıklama ve iki buton gösterir. Buton URL'leri dil öneki olmadan pathnext (iletisim, urunler) — site routing ekler. Çok dilli metin ve animasyonlu giriş içerir.",
@@ -2701,7 +2754,9 @@
           "tr": "Ürün navigasyonu",
           "en": "Product navigation",
           "ar": "تنقل المنتج"
-        }
+        },
+        "stil": "",
+        "activetext": "#fff"
       },
       "category": "page",
       "description": "Sayfa basligi, yan menu ve icerik alani. Urun detayinda breadcrumb, olcu kartlari, teklif/WhatsApp CTA, onceki/sonraki urun navigasyonu. Kategori menusu ve responsive slide-in menu.",
