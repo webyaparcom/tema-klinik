@@ -1,72 +1,32 @@
 {
-  "name": "Ekip 1",
-  "desing": {
-    "max": "1200px",
-    "bgcolor": "#ffffff",
-    "cardbg": "#f8fafc",
-    "bordercolor": "#e2e8f0",
-    "titlecolor": "#1e293b",
-    "textcolor": "#475569",
-    "accent": "#DE6D26",
-    "badge": {
-      "tr": "Ekibimiz",
-      "en": "Our Team"
-    },
-    "title": {
-      "tr": "Uzman Kadromuzla Tanışın",
-      "en": "Meet Our Experts"
-    },
-    "description": {
-      "tr": "Alanında deneyimli ekibimiz projelerinize değer katmak için burada.",
-      "en": "Our experienced team is here to add value to your projects."
-    },
-    "accentText": "#ffffff"
-  },
-  "data": [
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Kurucu / CEO",
-        "en": "Founder / CEO"
-      },
-      "bio": {
-        "tr": "10+ yıllık sektör deneyimi ile strateji ve yönetim.",
-        "en": "Strategy and management with 10+ years of industry experience."
-      },
-      "img": ""
-    },
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Tasarım Direktörü",
-        "en": "Design Director"
-      },
-      "bio": {
-        "tr": "Marka kimliği ve kullanıcı deneyimi tasarımı.",
-        "en": "Brand identity and user experience design."
-      },
-      "img": ""
-    },
-    {
-      "name": "Ad Soyad",
-      "role": {
-        "tr": "Yazılım Geliştirici",
-        "en": "Software Developer"
-      },
-      "bio": {
-        "tr": "Modern web teknolojileri ile ölçeklenebilir çözümler.",
-        "en": "Scalable solutions with modern web technologies."
-      },
-      "img": ""
-    }
-  ],
-  "category": "team",
-  "description": "Ekip üyeleri modülü. Fotoğraf, isim, unvan ve kısa biyografiyi responsive kart grid'inde gösterir. Fotoğraf yoksa ikon fallback, çok dilli unvan/biyografi ve animasyonlu giriş içerir.",
+  "name": "Ekip Sahnesi — büyük portre + üye listesi",
+  "description": "team-1 / team-2 (eşit kart ızgarası) görsel alternatifi: tek büyük portre + biyografi «sahnesi», yanında üye listesi (WAI-ARIA sekme kalıbı, ok/Home/End tuşları; RTL'de oklar çevrilir). Seçilen üye sahneye geçişle gelir; 1024px altında liste sahnenin üstünde yatay şerit. Görsel yoksa baş harf monogramı; e-posta ve üye sosyal bağlantıları (yalnız http/https) doluysa. JS'siz tüm üyeler alt alta görünür. Metinler dil sözlüğü; renkler desing + var(--mx-site-*); mantıksal CSS → RTL. Veri yoksa blok basılmaz.",
   "version": "1.0.0",
   "icon": "groups",
+  "category": "team",
+  "subCategory": "spotlight",
+  "tags": ["team", "ekip", "spotlight", "tabs", "portrait", "rtl"],
+  "desing": {
+    "max": "1240px",
+    "ust": "",
+    "baslik": "",
+    "metin": "",
+    "yuvarlak": "28px",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "text": "var(--mx-site-text, #111318)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #111318) 66%, var(--mx-site-bg, #ffffff))",
+    "kartBg": "var(--mx-site-surface, #f3f4f6)",
+    "cizgi": "color-mix(in srgb, var(--mx-site-text, #111318) 14%, transparent)",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentInk": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 70%, var(--mx-site-text, #111318))",
+    "bgcolor": "var(--mx-site-bg, #ffffff)",
+    "color": "var(--mx-site-text, #111318)"
+  },
+  "data": [],
   "veri": {
     "statik": true,
     "dinamik": false,
-    "kaynak": "desing/data"
+    "kaynak": "data",
+    "alanlar": { "ad": "metin ya da dil sözlüğü (zorunlu)", "unvan": "dil sözlüğü", "metin": "dil sözlüğü (biyografi)", "img": "portre (4:5)", "eposta": "e-posta", "social": "[{ ad, url }] yalnız http/https" }
   }
 }

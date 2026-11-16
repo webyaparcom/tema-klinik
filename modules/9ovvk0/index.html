@@ -1,164 +1,211 @@
-<section class="modulex-team">
-  <div class="modulex-team-container">
-    <div class="modulex-team-header">
-      <div class="modulex-team-badge">{{badge}}</div>
-      <h2 class="modulex-team-title">{{title}}</h2>
-      <p class="modulex-team-desc">{{description}}</p>
-    </div>
-    <div class="modulex-team-grid">
-      {{html}}
+<section class="modulex-eks{{ekssinif}}" {{eksetiket}}>
+  <div class="modulex-eks-ic">
+    <header class="modulex-eks-bas">
+      {{eksust}}
+      {{eksbaslik}}
+      {{eksmetin}}
+    </header>
+    <div class="modulex-eks-sahne">
+      <div class="modulex-eks-paneller">{{ekspaneller}}</div>
+      <div class="modulex-eks-liste" role="tablist" aria-orientation="vertical">{{ekssekmeler}}</div>
     </div>
   </div>
 </section>
 
 <style>
-  .modulex-team {
+  /* ekip-sahne — ekip sahnesi (15 Kas 2026, G4 · D17). team-1 / team-2 eşit kart ızgarasıdır; bu modül tek bir büyük portre +
+     biyografi «sahnesi» ve yanında üye listesi (sekme kalıbı). Üye seçilince sahne değişir (geçişli); mobilde liste yatay şerit olur.
+     Görsel yoksa baş harf monogramı. Renkler desing'den; mantıksal CSS → RTL. */
+  .modulex-eks {
+    box-sizing: border-box;
     width: 100%;
-    padding: 80px 20px;
-    background: --bgcolor--;
-    box-sizing: border-box;
+    padding: clamp(56px, 8vw, 104px) 20px;
+    background: --bg--;
+    color: --text--;
+    font-size: 1rem;
+    font-family: var(--mx-font-sans, inherit);
   }
+  .modulex-eks *,
+  .modulex-eks *::before,
+  .modulex-eks *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-eks :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  .modulex-eks-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-eks-bas { max-width: 720px; margin-block-end: 40px; }
+  .modulex-eks--bassiz .modulex-eks-bas { display: none; }
+  .modulex-eks-ust { margin: 0 0 12px; color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-eks-baslik { margin: 0; font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.03em; line-height: 1.1; }
+  .modulex-eks-giris { margin: 14px 0 0; color: --muted--; font-size: 1.05rem; line-height: 1.7; }
 
-  .modulex-team-container {
-    max-width: --max--;
-    margin: 0 auto;
-  }
-
-  .modulex-team-header {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .modulex-team-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: --accent--;
-    color: --accentText--; /* 31 Eki: sabit beyaz → token */
-    border-radius: 50px;
-    font-size: 13px;
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-
-  .modulex-team-title {
-    font-size: 36px;
-    font-weight: 800;
-    color: --titlecolor--;
-    margin: 0 0 12px;
-  }
-
-  .modulex-team-desc {
-    font-size: 16px;
-    color: --textcolor--;
-    max-width: 640px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-
-  .modulex-team-grid {
+  .modulex-eks-sahne { display: grid; grid-template-columns: minmax(0, 1fr) minmax(260px, 340px); gap: clamp(20px, 3vw, 40px); align-items: start; }
+  .modulex-eks--tek .modulex-eks-sahne { grid-template-columns: minmax(0, 1fr); }
+  .modulex-eks--tek .modulex-eks-liste { display: none; }
+  .modulex-eks-panel {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: clamp(20px, 3vw, 44px);
+    align-items: end;
+    animation: modulex-eks-gel 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
   }
-
-  .modulex-team-card {
-    background: --cardbg--;
-    border: 1px solid --bordercolor--;
-    border-radius: 16px;
-    padding: 28px 20px;
-    text-align: center;
-    box-sizing: border-box;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: modulexTeamIn 0.5s ease both;
-  }
-
-  .modulex-team-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.1);
-  }
-
-  .modulex-team-avatar {
-    width: 108px;
-    height: 108px;
-    margin: 0 auto 16px;
-    border-radius: 50%;
+  .modulex-eks-panel[hidden] { display: none; }
+  .modulex-eks-portre {
+    position: relative;
     overflow: hidden;
-    border: 3px solid --accent--;
-    background: --bordercolor--;
-    display: flex;
+    aspect-ratio: 4 / 5;
+    border-radius: --yuvarlak--;
+    background: --kartBg--;
+  }
+  .modulex-eks-portre img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease; }
+  .modulex-eks-panel:hover .modulex-eks-portre img { transform: scale(1.03); }
+  .modulex-eks-harf {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    background: color-mix(in srgb, --accent-- 16%, --kartBg--);
+    color: --accentInk--;
+    font-weight: 800;
   }
-
-  .modulex-team-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .modulex-team-avatar .material-symbols-outlined {
-    font-size: 52px;
-    color: --textcolor--;
-  }
-
-  .modulex-team-name {
-    font-size: 17px;
-    font-weight: 700;
-    color: --titlecolor--;
-    margin: 0 0 4px;
-  }
-
-  .modulex-team-role {
-    font-size: 13px;
+  .modulex-eks-harf--buyuk { position: absolute; inset: 0; font-family: var(--mx-font-heading, inherit); font-size: clamp(4rem, 10vw, 8rem); letter-spacing: -0.04em; }
+  .modulex-eks-bilgi { padding-block-end: 8px; }
+  .modulex-eks-no { margin: 0 0 18px; color: --muted--; font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: 0.1em; }
+  .modulex-eks-ad { margin: 0; font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.2vw, 2.8rem); font-weight: 750; letter-spacing: -0.03em; line-height: 1.08; }
+  .modulex-eks-unvan { margin: 10px 0 0; color: --accentInk--; font-weight: 650; }
+  .modulex-eks-metin { margin: 18px 0 0; color: --muted--; line-height: 1.75; }
+  .modulex-eks-eposta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-block-start: 20px;
+    color: --text--;
     font-weight: 600;
-    color: --accent--;
-    margin: 0 0 10px;
+    text-decoration: none;
+    border-block-end: 1px solid --cizgi--;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
   }
-
-  .modulex-team-bio {
-    font-size: 13px;
-    line-height: 1.6;
-    color: --textcolor--;
-    margin: 0;
+  .modulex-eks-eposta:hover { color: --accentInk--; border-color: --accent--; }
+  .modulex-eks-eposta .material-symbols-outlined { font-size: 20px; }
+  .modulex-eks-sosyal { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+  .modulex-eks-sosyal a {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid --cizgi--;
+    border-radius: 999px;
+    color: --text--;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
+  .modulex-eks-sosyal a:hover { background: --text--; color: --bg--; }
+  .modulex-eks-sosyal a:focus-visible,
+  .modulex-eks-eposta:focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
 
-  @keyframes modulexTeamIn {
-    from {
-      opacity: 0;
-      transform: translateY(16px);
+  .modulex-eks-liste { display: flex; flex-direction: column; gap: 4px; border-inline-start: 1px solid --cizgi--; padding-inline-start: 12px; }
+  .modulex-eks-sekme {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 10px 12px;
+    border: 0;
+    border-radius: 14px;
+    background: transparent;
+    color: --text--;
+    font: inherit;
+    text-align: start;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+  }
+  .modulex-eks-sekme::before {
+    content: "";
+    position: absolute;
+    inset-block: 14px;
+    inset-inline-start: -13px;
+    width: 3px;
+    border-radius: 3px;
+    background: --accent--;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+  }
+  .modulex-eks-sekme:hover { background: color-mix(in srgb, --text-- 5%, transparent); }
+  .modulex-eks-sekme[aria-selected="true"] { background: --kartBg--; }
+  .modulex-eks-sekme[aria-selected="true"]::before { transform: scaleY(1); }
+  .modulex-eks-sekme:focus-visible { outline: 3px solid --accent--; outline-offset: 2px; }
+  .modulex-eks-kucuk { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; object-fit: cover; font-size: 0.95rem; filter: grayscale(0.6); transition: filter 0.3s ease; }
+  .modulex-eks-sekme[aria-selected="true"] .modulex-eks-kucuk,
+  .modulex-eks-sekme:hover .modulex-eks-kucuk { filter: none; }
+  .modulex-eks-sekme-metin { display: flex; flex-direction: column; min-width: 0; }
+  .modulex-eks-sekme-ad { overflow: hidden; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+  .modulex-eks-sekme-unvan { overflow: hidden; color: --muted--; font-size: 0.88rem; text-overflow: ellipsis; white-space: nowrap; }
+  @keyframes modulex-eks-gel { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-eks-baslik,
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-eks-ad { letter-spacing: 0; line-height: 1.35; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-eks-ust,
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-eks-no { letter-spacing: 0; }
+
+  @media (max-width: 1024px) {
+    .modulex-eks-sahne { grid-template-columns: minmax(0, 1fr); }
+    .modulex-eks-liste {
+      flex-direction: row;
+      order: -1;
+      overflow-x: auto;
+      padding-inline-start: 0;
+      padding-block-end: 8px;
+      border-inline-start: 0;
+      border-block-end: 1px solid --cizgi--;
+      scroll-snap-type: inline proximity;
+      scrollbar-width: thin;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .modulex-eks-sekme { flex: 0 0 auto; width: auto; max-width: 260px; scroll-snap-align: start; }
+    .modulex-eks-sekme::before { inset-block: auto -9px; inset-inline: 14px; width: auto; height: 3px; transform: scaleX(0); }
+    .modulex-eks-sekme[aria-selected="true"]::before { transform: scaleX(1); }
   }
-
   @media (max-width: 768px) {
-    .modulex-team {
-      padding: 48px 14px;
-    }
-
-    .modulex-team-title {
-      font-size: 26px;
-    }
-
-    .modulex-team-grid {
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 16px;
-    }
-
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-eks-panel { grid-template-columns: minmax(0, 1fr); }
+    .modulex-eks-portre { aspect-ratio: 1 / 1; }
   }
-
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
+    .modulex-eks-panel,
+    .modulex-eks * { animation: none !important; transition: none !important; }
   }
 </style>
+
+<script>
+  (() => {
+    const kok = document.querySelector(".modulex-eks");
+    if (!kok || kok.dataset.eksHazir) return;
+    kok.dataset.eksHazir = "1";
+    const sekmeler = [...kok.querySelectorAll(".modulex-eks-sekme")];
+    const paneller = [...kok.querySelectorAll(".modulex-eks-panel")];
+    /* JS'siz tüm paneller görünür (data-gizli yalnız işaret); betik çalışınca sekme kalıbına geçer */
+    paneller.forEach((p) => { if (p.hasAttribute("data-gizli")) p.hidden = true; });
+    const sec = (i, odak) => {
+      sekmeler.forEach((s, j) => {
+        const secili = i === j;
+        s.setAttribute("aria-selected", secili ? "true" : "false");
+        s.tabIndex = secili ? 0 : -1;
+        if (paneller[j]) paneller[j].hidden = !secili;
+      });
+      if (odak) sekmeler[i].focus();
+      sekmeler[i].scrollIntoView({ block: "nearest", inline: "nearest" });
+    };
+    sekmeler.forEach((s, i) => {
+      s.addEventListener("click", () => sec(i, false));
+      s.addEventListener("keydown", (e) => {
+        const ileri = ["ArrowDown", "ArrowRight"];
+        const geri = ["ArrowUp", "ArrowLeft"];
+        const rtl = getComputedStyle(kok).direction === "rtl";
+        let k = e.key;
+        if (rtl && (k === "ArrowRight" || k === "ArrowLeft")) k = k === "ArrowRight" ? "ArrowLeft" : "ArrowRight";
+        let yeni = -1;
+        if (ileri.includes(k)) yeni = (i + 1) % sekmeler.length;
+        else if (geri.includes(k)) yeni = (i - 1 + sekmeler.length) % sekmeler.length;
+        else if (k === "Home") yeni = 0;
+        else if (k === "End") yeni = sekmeler.length - 1;
+        if (yeni > -1) { e.preventDefault(); sec(yeni, true); }
+      });
+    });
+  })();
+</script>
